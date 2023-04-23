@@ -1,0 +1,105 @@
+* {
+    font-family: 'Unbounded', cursive;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.main-md-container {
+    background-color: #222831;
+    width: 100%;
+    height: 100vh;
+}
+/* Подписи на основном слайдере */
+.main_name {
+    text-align: left;
+    padding-left: 15px;
+}
+/* Зеленая точка */
+.circle {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background:rgb(51, 182, 123);
+    margin-top: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* Подписи */
+figcaption {
+    color:rgb(165, 180, 193);
+    font-weight: bold;
+    font-size: small;
+    text-align: center;
+}
+
+figcaption:hover {
+    color: rgb(51, 182, 123);
+}
+#mr_robot:hover {
+    color: rgb(193, 45, 35);
+} 
+#label:hover, #navbar > div > a:hover{
+    color: rgb(51, 182, 123);
+}
+
+/* Стрелки */
+#navPanelMovie {
+    display: flex;
+    justify-content: space-between;
+}
+#navPanelMovie > div {
+    align-items: stretch;
+}
+
+#navPanelSerial {
+    display: flex;
+    justify-content: space-between;
+}
+#navPanelSerial > div {
+    align-items: stretch;
+}
+
+#navPanelMult {
+    display: flex;
+    justify-content: space-between;
+}
+#navPanelMult > div {
+    align-items: stretch;
+}
+
+/* Попап */
+.popup-fade {
+	display: none;
+}
+.popup-fade:before {
+	content: '';
+	background: #000;
+	position: fixed; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%;
+	opacity: 0.7;
+	z-index: 9999;
+}
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+    width: 80%;
+    height: 80%;
+	padding: 35px;
+    transform: translate(-50%, -50%);
+	background: #1B2430 ;
+	border: 2px solid rgb(51, 182, 123);
+	border-radius: 4px; 
+	z-index: 99999;
+	opacity: 1;	
+}
+.popup-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}

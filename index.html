@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KinoFlow</title>
+    <!-- OWL-Carousel -->
+    <link rel="stylesheet" href="./owl.carousel.min.css">
+    <link rel="stylesheet" href="./owl.theme.default.min.css">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&family=Unbounded:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <!-- UserFileProject -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+    <body style="height: auto;" onload="one()">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand" target="_self">
+                    <div class="d-inline-block align-top" loading="lazy" id="label">
+                        <svg class="icon ms-auto" width="30" height="25.5">
+                            <use xlink:href="#video_camera_round [#964]"></use>
+                        </svg>
+                        KinoFlow
+                    </div>
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                    <span>
+                        <svg class="icon" width="30" height="25">
+                            <use xlink:href="#align_text_distribute [#914]"></use>
+                        </svg>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="d-flex justify-content-center navbar-nav mx-auto mb-lg-0 nav-fill w-100" id="navbar">
+                        <div class="nav-item m-2"><a href="#Movies" class="nav-link" target="_self">Фильмы</a></div>
+                        <div class="nav-item m-2"><a href="#Serials" class="nav-link" target="_self">Сериалы</a></div>
+                        <div class="nav-item m-2"><a href="#Mults" class="nav-link" target="_self">Мультфильмы</a></div>
+                        <!-- <div class="nav-item m-2"><a href="#Favorite" class="nav-link" target="_self">Избранное</a></div> -->
+                        <div class="nav-item m-2"><a href="./profile.html" class="nav-link" target="_self">Профиль</a></div>
+                        <form class="d-flex my-2 mx-2">
+                            <input class="form-control me-2 bg-dark text-white" type="search" placeholder="Поиск" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Поиск</button>
+                        </form>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+        <!-- Main-comtainer -->
+        <div class="main-md-container container-dark bg-dark text-secondary">
+            <!-- Slider -->
+            <div class="owl-carousel owl-theme" id="main-slider" style=" margin-bottom: 0px; padding-top: 100px;">
+                <div><a href="#" data-video="https://www.youtube.com/embed/CZ1CATNbXg0" class="popup-open img-link"><img src="./img/filmC1.jpg" class="px-3" alt="photo_carousel" onclick="getContent()"></a><figcaption class="main_name d-flex">ВАЛЛ-И <div class="circle"></div> 2008</figcaption></div>
+                <div><a href="#" data-video="https://www.youtube.com/embed/CHivqmutR0I" class="popup-open img-link"><img src="./img/filmC2.jpg" class="px-3" alt="photo_carousel" onclick="getContent()"></a><figcaption class="main_name d-flex">Волк с Уолл-стрит <div class="circle"></div>2013</figcaption></div>
+                <div><a href="#" data-video="https://www.youtube.com/embed/1pLKosRrfx8" class="popup-open img-link"><img src="./img/filmC3.jpg" class="px-3" alt="photo_carousel" onclick="getContent()"></a><figcaption class="main_name d-flex">Тайная жизнь домашних животных<div class="circle"></div>2016</figcaption></div>
+                <div><a href="#" data-video="https://www.youtube.com/embed/5cPTnjDzhEM" class="popup-open img-link"><img src="./img/filmC4.jpg" class="px-3" alt="photo_carousel" onclick="getContent()"></a><figcaption class="main_name d-flex">Таксист<div class="circle"></div>1976</figcaption></div>
+                <div><a href="#" data-video="https://www.youtube.com/embed/PX6KNzyQfZM" class="popup-open img-link"><img src="./img/filmC5.jpg" class="px-3" alt="photo_carousel" onclick="getContent()"></a><figcaption class="main_name d-flex">Очень странные дела<div class="circle"></div>2022</figcaption></div>
+                <div><a href="#" data-video="https://www.youtube.com/embed/-Bnlub0O_ec" class="popup-open img-link"><img src="./img/filmC6.jpg" class="px-3" alt="photo_carousel" onclick="getContent()"></a><figcaption class="main_name d-flex">Изгой-один: Звездные войны. Истории<div class="circle"></div>2016</figcaption></div>
+                <div><a href="#" data-video="https://www.youtube.com/embed/6Gpj72qHMjE" class="popup-open img-link"><img src="./img/filmC7.jpg" class="px-3" alt="photo_carousel" onclick="getContent()"></a><figcaption class="main_name d-flex">Как приручить дракона<div class="circle"></div>2010</figcaption></div>
+                <div><a href="#" data-video="https://www.youtube.com/embed/Dh1mIO79fxo" class="popup-open img-link"><img src="./img/filmC8.jpg" class="px-3" alt="photo_carousel" onclick="getContent()"></a><figcaption class="main_name d-flex">Игра престолов<div class="circle"></div>2019</figcaption></div>
+                <div><a href="#" data-video="https://www.youtube.com/embed/taQW31SVPCk" class="popup-open img-link"><img src="./img/filmC9.jpg" class="px-3" alt="photo_carousel" onclick="getContent()"></a><figcaption class="main_name d-flex">Бегущий по лезвию 2049<div class="circle"></div>2017</figcaption></div>
+                <div><a href="#" data-video="https://www.youtube.com/embed/1UyMmagsdb0" class="popup-open img-link"><img src="./img/filmC10.jpg" class="px-3" alt="photo_carousel" onclick="getContent()"></a><figcaption class="main_name d-flex">Лучше звоните Солу<div class="circle"></div>2020</figcaption></div> 
+            </div>
+            <!-- Movies -->
+            <div class="container-fluid container-dark bg-dark" id="Movies">
+                <div class="my-3 px-3" id="navPanelMovie">
+                    <h2>Фильмы</h2>
+                    <div class="owl-nav">
+                        <svg class="owl-prev" width="20" height="15" id="left">
+                            <use xlink:href="#arrow_left [#335]"></use>
+                        </svg>
+
+                        <svg class="owl-next" width="20" height="15" id="right">
+                            <use xlink:href="#arrow_right [#336]"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="owl-carousel" id="movies">
+                    <div><a href="#" data-video="https://www.youtube.com/embed/DesqPugsMr8" class="popup-open img-link"><img class="px-3" src="./img/film1.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption  class="px-3">Хан Соло: <br> Звездные войны. <br>Истории</figcaption></diV>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/iVw9Hsnqpg8" class="popup-open img-link"><img class="px-3" src="./img/film2.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption  class="px-3">Первому игроку <br>приготовиться</figcaption></diV>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/5Dyoa99FZiw" class="popup-open img-link"><img class="px-3" src="./img/film3.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption  class="px-3">Прибытие</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/taQW31SVPCk" class="popup-open img-link"><img class="px-3" src="./img/film4.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption  class="px-3">Бегущий по <br>лезвию 2049</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/2oTQSj5AL84" class="popup-open img-link"><img class="px-3" src="./img/film5.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption  class="px-3">Дюнкерк</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/LorQ3rSKIVQ" class="popup-open img-link"><img class="px-3" src="./img/film6.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption  class="px-3">Человек, который <br> изменил все</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/-Bnlub0O_ec" class="popup-open img-link"><img class="px-3" src="./img/film7.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Изгой-один: <br> Звездные войны. <br>Истории</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/Q0CbN8sfihY" class="popup-open img-link"><img class="px-3" src="./img/film8.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Звездные войны: <br>Последние <br>джедаи</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/lmB9VWm0okU" class="popup-open img-link"><img class="px-3" src="./img/film9.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Омерзительная <br>восьмерка</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/5cPTnjDzhEM" class="popup-open img-link"><img class="px-3" src="./img/film10.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Таксист</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/C7-7qQ61QHU" class="popup-open img-link"><img class="px-3" src="./img/film11.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Бойцовский<br> клуб</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/cWkPiIHur8Y" class="popup-open img-link"><img class="px-3" src="./img/film12.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Из машины</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/kgAeKpAPOYk" class="popup-open img-link"><img class="px-3" src="./img/film13.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Побег<br> из шоушенка</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/54izAMhnj0c" class="popup-open img-link"><img class="px-3" src="./img/film14.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Социальная сеть</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/CHivqmutR0I" class="popup-open img-link"><img class="px-3" src="./img/film15.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Волк с Уолл-стрит</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/-GEUzDCmH1o" class="popup-open img-link"><img class="px-3" src="./img/film16.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Фаворитка</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/xyooGxWz_eQ" class="popup-open img-link"><img class="px-3" src="./img/film17.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Власть</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/4U2hy2Asi-0" class="popup-open img-link"><img class="px-3" src="./img/film18.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Богемская <br>рапсодия</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/VPjXbjQvS7E" class="popup-open img-link"><img class="px-3" src="./img/film19.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Человек на Луне </figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/dm0ndFln1s4" class="popup-open img-link"><img class="px-3" src="./img/film20.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Стекло</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/eors1MMmY5I" class="popup-open img-link"><img class="px-3" src="./img/film21.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Зеленая книга</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/zw81ihoukKU" class="popup-open img-link"><img class="px-3" src="./img/film22.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Однажды в ...<br>Голливуде</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/gIhjPNqmefs" class="popup-open img-link"><img class="px-3" src="./img/film23.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Стив Джобс</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/kJvTjKfIuuI" class="popup-open img-link"><img class="px-3" src="./img/film24.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Игра<br>на понижение</figcaption></div>                      
+                </div>
+            </div>
+            <!-- Serials -->
+            <div class="container-fluid container-dark bg-dark pt-5" id="Serials">
+                <div class="container-dark bg-dark mb-3 px-3" id="navPanelSerial">
+                    <h2>Сериалы</h2>
+                    <div class="owl-nav">
+                        <svg class="owl-prev" width="20" height="15" id="left">
+                            <use xlink:href="#arrow_left [#335]"></use>
+                        </svg>
+                        <svg class="owl-next" width="20" height="15" id="right">
+                            <use xlink:href="#arrow_right [#336]"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="owl-carousel" id="serials">
+                    <div><a href="#" data-video="https://www.youtube.com/embed/cSqi-8kAMmM" class="popup-open img-link"><img class="px-3" src="./img/serial1.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Ведьмак</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/Dh1mIO79fxo" class="popup-open img-link"><img class="px-3" src="./img/serial2.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Игра престолов</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/qVmmsQns9oQ" class="popup-open img-link"><img class="px-3" src="./img/serial3.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption id="mr_robot" class="px-3">Мистер робот</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/6dbzFDJyBfw" class="popup-open img-link"><img class="px-3" src="./img/serial4.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Пацаны</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/Xrgv1h0Ax7Q" class="popup-open img-link"><img class="px-3" src="./img/serial5.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Американская <br>история ужасов</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/K4ZgLb73aJY" class="popup-open img-link"><img class="px-3" src="./img/serial6.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Ривердейл</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/SwQSvchPh9Y" class="popup-open img-link"><img class="px-3" src="./img/serial7.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Острые козырьки</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/0N6P9ZnvShw" class="popup-open img-link"><img class="px-3" src="./img/serial8.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Эйфория</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/ESEUoa-mz2c" class="popup-open img-link"><img class="px-3" src="./img/serial9.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Тьма</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/qtY2sel76qo" class="popup-open img-link"><img class="px-3" src="./img/serial10.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Чернобыль</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/L5l3vv9n7EU" class="popup-open img-link"><img class="px-3" src="./img/serial11.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Во все тяжкие</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/Z9rlDu8r_CU" class="popup-open img-link"><img class="px-3" src="./img/serial12.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Черное зеркало</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/1UyMmagsdb0" class="popup-open img-link"><img class="px-3" src="./img/serial13.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Лучше звоните<br> Солу</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/_InqQJRqGW4" class="popup-open img-link"><img class="px-3" src="./img/serial14.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Бумажный дом</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/-Nv9YrZr3wE" class="popup-open img-link"><img class="px-3" src="./img/serial15.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Сыны анархии</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/IrBKwzL3K7s" class="popup-open img-link"><img class="px-3" src="./img/serial16.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Шерлок</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/oTVXmCL7yA4" class="popup-open img-link"><img class="px-3" src="./img/serial17.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Бесстыжие</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/PX6KNzyQfZM" class="popup-open img-link"><img class="px-3" src="./img/serial18.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Очень странные<br> дела</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/OpECq14wxiM" class="popup-open img-link"><img class="px-3" src="./img/serial19.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Теория<br> большого взрыва</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/hZ9N7760o0A" class="popup-open img-link"><img class="px-3" src="./img/serial20.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Мандолорец</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/t9H38WJ7OVA" class="popup-open img-link"><img class="px-3" src="./img/serial21.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Настоящий детектив</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/0JRdQu4lnIU" class="popup-open img-link"><img class="px-3" src="./img/serial22.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Мир дикого запада</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/zIjSaeBp974" class="popup-open img-link"><img class="px-3" src="./img/serial23.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Ходячие мертвецы</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/qLd7BvKsUzQ" class="popup-open img-link"><img class="px-3" src="./img/serial24.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Люцифер</figcaption></div>
+                </div>
+            </div>
+            <!-- Animation -->
+            <div class="container-fluid container-dark bg-dark pt-5" id="Mults">
+                <div class="mb-3 px-3" id="navPanelMult">
+                    <h2>Мультфильмы</h2>
+                    <div class="owl-nav">
+                        <svg class="owl-prev" width="20" height="15" id="left">
+                            <use xlink:href="#arrow_left [#335]"></use>
+                        </svg>
+                        <svg class="owl-next" width="20" height="15" id="right">
+                            <use xlink:href="#arrow_right [#336]"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="owl-carousel" id="mults">
+                    <div><a href="#" data-video="https://www.youtube.com/embed/QHGuHMiHCHg" class="popup-open img-link"><img class="px-3" src="./img/mult1.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Суперсемейка 2</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/tg52up16eq0" class="popup-open img-link"><img class="px-3" src="./img/mult2.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Человек-паук: Через вселенные</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/CZ1CATNbXg0" class="popup-open img-link"><img class="px-3" src="./img/mult3.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">ВАЛЛ-И</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/LKFuXETZUsI" class="popup-open img-link"><img class="px-3" src="./img/mult4.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Моана</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/orAqhC-Hp_o" class="popup-open img-link"><img class="px-3" src="./img/mult5.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Мадагаскар</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/PXi3Mv6KMzY" class="popup-open img-link"><img class="px-3" src="./img/mult6.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Кунг-фу Панда</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/fx1-RXrKKBk" class="popup-open img-link"><img class="px-3" src="./img/mult7.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Остров собак</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/6Gpj72qHMjE" class="popup-open img-link"><img class="px-3" src="./img/mult8.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Как приручить дракона</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/pnM2U6TXCm4" class="popup-open img-link"><img class="px-3" src="./img/mult9.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Холодное сердце</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/MQLaY2RjqV4" class="popup-open img-link"><img class="px-3" src="./img/mult10.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">В поисках Немо</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/eCV7mz_ydq8" class="popup-open img-link"><img class="px-3" src="./img/mult11.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Тайна Коко</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/X0CsHY-56fg" class="popup-open img-link"><img class="px-3" src="./img/mult12.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Тачки</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/nA8KmHC2Z-g" class="popup-open img-link"><img class="px-3" src="./img/mult13.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Акира</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/xa2lsmlaX3o" class="popup-open img-link"><img class="px-3" src="./img/mult14.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Пингвины из Мадагаскара</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/xhO3MUto0ck" class="popup-open img-link"><img class="px-3" src="./img/mult15.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Рататуй</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/eCgCT9sskBQ" class="popup-open img-link"><img class="px-3" src="./img/mult16.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Босс-молокосос</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/nrgyL7RqHyg" class="popup-open img-link"><img class="px-3" src="./img/mult17.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Гринч</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/1pLKosRrfx8" class="popup-open img-link"><img class="px-3" src="./img/mult18.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Тайная жизнь домашних животных</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/f-H-oVd78Z4" class="popup-open img-link"><img class="px-3" src="./img/mult19.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">История игрушек</figcaption></div>
+                    <div><a href="#" data-video="https://www.youtube.com/embed/Gr0fdjkX6DM" class="popup-open img-link"><img class="px-3" src="./img/mult20.jpg" width="200" height="auto" alt="photo" onclick="getContent()"></a><figcaption class="px-3">Вверх</figcaption></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="popup-fade" id="popup">
+          <div class="popup d-flex justify-content-center">
+            <svg class="popup-close" width="20" height="20"><use xlink:href="#close [#1511]"></use></svg>
+            <iframe id="YouFrame" width="100%" height="100%" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="./owl.carousel.min.js"></script>
+        <!-- Bootstrap CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
+        
+        <!-- Brand -->
+        <svg width="0" height="0" class="hidden">
+            <symbol version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 17" id="video_camera_round [#964]">
+              <title>video_camera_round [#964]</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Dribbble-Dark-Preview" transform="translate(-300.000000, -3921.000000)" fill="#18FF94">
+                  <g id="icons" transform="translate(56.000000, 160.000000)">
+                    <path d="M262,3771.3123 L262,3771.36176 L262,3773.76958 L259.767,3772.33333 L262,3771.10006 L262,3771.3123 Z M256,3774.90909 C256,3775.47782 255.552,3775.93939 255,3775.93939 L247,3775.93939 C246.448,3775.93939 246,3775.47782 246,3774.90909 L246,3770.78788 C246,3770.21915 246.448,3769.75758 247,3769.75758 L255,3769.75758 C255.552,3769.75758 256,3770.21915 256,3770.78788 L256,3774.90909 Z M248.11,3765.12121 C248.662,3765.12121 249.11,3765.58382 249.11,3766.15152 C249.11,3766.71921 248.662,3767.18182 248.11,3767.18182 C247.559,3767.18182 247.11,3766.71921 247.11,3766.15152 C247.11,3765.58382 247.559,3765.12121 248.11,3765.12121 L248.11,3765.12121 Z M253.11,3763.06061 C254.213,3763.06061 255.11,3763.98479 255.11,3765.12121 C255.11,3766.25764 254.213,3767.18182 253.11,3767.18182 C252.008,3767.18182 251.11,3766.25764 251.11,3765.12121 C251.11,3763.98479 252.008,3763.06061 253.11,3763.06061 L253.11,3763.06061 Z M262.47,3768.16576 L258,3771.0403 L258,3769.24242 C258,3768.23479 257.38,3767.39818 256.452,3767.21994 C256.809,3766.60382 257.069,3765.89085 257.069,3765.12121 C257.069,3762.84527 255.299,3761 253.09,3761 C251.473,3761 250.099,3761.99321 249.468,3763.41503 C249.056,3763.19661 248.601,3763.06061 248.105,3763.06061 C246.448,3763.06061 245.108,3764.4443 245.108,3766.15152 C245.108,3766.58218 245.112,3766.99224 245.267,3767.36418 C244.57,3767.68667 244,3768.40376 244,3769.24242 L244,3775.42424 C244,3776.5617 245.062,3778 246.167,3778 L256.167,3778 C257.271,3778 258,3776.5617 258,3775.42424 L258,3773.62636 L262.47,3776.50091 C263.137,3776.92952 264,3776.436 264,3775.62721 L264,3769.03945 C264,3768.23067 263.137,3767.73715 262.47,3768.16576 L262.47,3768.16576 Z" id="video_camera_round-[#964]"></path>
+                  </g>
+                </g>
+              </g>
+            </symbol>
+        </svg>
+        <!-- Menu -->
+        <svg width="0" height="0" class="hidden">
+            <symbol version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 16" id="align_text_distribute [#914]">
+              <title>align_text_distribute [#914]</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Dribbble-Dark-Preview" transform="translate(-300.000000, -4161.000000)" fill="#18FF94">
+                  <g id="icons" transform="translate(56.000000, 160.000000)">
+                    <path d="M244,4017 L264,4017 L264,4015 L244,4015 L244,4017 Z M244,4003 L264,4003 L264,4001 L244,4001 L244,4003 Z M244,4010 L264,4010 L264,4008 L244,4008 L244,4010 Z" id="align_text_distribute-[#914]"></path>
+                  </g>
+                </g>
+              </g>
+            </symbol>
+        </svg>
+        <!-- Arrow_left -->
+        <svg width="0" height="0" class="hidden">
+            <symbol version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 11 20" id="arrow_left [#335]">
+              <title>arrow_left [#335]</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Dribbble-Dark-Preview" transform="translate(-345.000000, -6679.000000)" fill="#18FF94">
+                  <g id="icons" transform="translate(56.000000, 160.000000)">
+                    <path d="M299.633777,6519.29231 L299.633777,6519.29231 C299.228878,6518.90256 298.573377,6518.90256 298.169513,6519.29231 L289.606572,6527.55587 C288.797809,6528.33636 288.797809,6529.60253 289.606572,6530.38301 L298.231646,6538.70754 C298.632403,6539.09329 299.27962,6539.09828 299.685554,6538.71753 L299.685554,6538.71753 C300.100809,6538.32879 300.104951,6537.68821 299.696945,6537.29347 L291.802968,6529.67648 C291.398069,6529.28574 291.398069,6528.65315 291.802968,6528.26241 L299.633777,6520.70538 C300.038676,6520.31563 300.038676,6519.68305 299.633777,6519.29231" id="arrow_left-[#335]"></path>
+                  </g>
+                </g>
+              </g>
+            </symbol>
+        </svg>
+        <!-- Arrow_right -->
+        <svg width="0" height="0" class="hidden">
+            <symbol version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 11 20" id="arrow_right [#336]">
+              <title>arrow_right [#336]</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Dribbble-Dark-Preview" transform="translate(-305.000000, -6679.000000)" fill="#18FF94">
+                  <g id="icons" transform="translate(56.000000, 160.000000)">
+                    <path d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769" id="arrow_right-[#336]"></path>
+                  </g>
+                </g>
+              </g>
+            </symbol>
+        </svg>
+        <!-- Circle plus -->
+        <svg width="0" height="0" class="hidden">
+            <symbol version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 21 20" id="plus_circle [#1427]">
+              <title>plus_circle [#1427]</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Dribbble-Dark-Preview" transform="translate(-179.000000, -600.000000)" fill="#18FF94">
+                  <g id="icons" transform="translate(56.000000, 160.000000)">
+                    <path d="M137.7,450 C137.7,450.552 137.2296,451 136.65,451 L134.55,451 L134.55,453 C134.55,453.552 134.0796,454 133.5,454 C132.9204,454 132.45,453.552 132.45,453 L132.45,451 L130.35,451 C129.7704,451 129.3,450.552 129.3,450 C129.3,449.448 129.7704,449 130.35,449 L132.45,449 L132.45,447 C132.45,446.448 132.9204,446 133.5,446 C134.0796,446 134.55,446.448 134.55,447 L134.55,449 L136.65,449 C137.2296,449 137.7,449.448 137.7,450 M133.5,458 C128.86845,458 125.1,454.411 125.1,450 C125.1,445.589 128.86845,442 133.5,442 C138.13155,442 141.9,445.589 141.9,450 C141.9,454.411 138.13155,458 133.5,458 M133.5,440 C127.70085,440 123,444.477 123,450 C123,455.523 127.70085,460 133.5,460 C139.29915,460 144,455.523 144,450 C144,444.477 139.29915,440 133.5,440" id="plus_circle-[#1427]"></path>
+                  </g>
+                </g>
+              </g>
+            </symbol>
+        </svg>
+        <!-- Close -->
+        <svg width="0" height="0" class="hidden">
+          <symbol version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 21 20" id="close [#1511]">
+            <title>close [#1511]</title>
+            <desc>Created with Sketch.</desc>
+            <defs></defs>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Dribbble-Dark-Preview" transform="translate(-419.000000, -240.000000)" fill="#18FF94">
+                <g id="icons" transform="translate(56.000000, 160.000000)">
+                  <polygon id="close-[#1511]" points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446"></polygon>
+                </g>
+              </g>
+            </g>
+          </symbol>
+        </svg>
+    </body>
+</html>

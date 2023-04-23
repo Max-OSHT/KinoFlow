@@ -1,0 +1,21 @@
+* {
+    font-family: 'Unbounded', cursive;
+}
+html {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    /* padding-top: 100px; */
+    padding-bottom: 100px;
+    /* margin-bottom: 100px; */
+}
+
+h2 {
+    text-align: center;
+}
+
+#manage {
+    padding-bottom: 300px;
+}
+
+@media screen and (max-width: 1600px) {#manage {padding-bottom: 470px;} }
